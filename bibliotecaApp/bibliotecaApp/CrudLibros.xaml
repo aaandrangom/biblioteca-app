@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bibliotecaApp.CrudLibros">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Biblioteca Universitaria"
+                   FontSize="Title" Padding="30, 10, 30, 10"/>
+
+            <Label x:Name="lblMensaje" 
+               Text="" FontSize="35" 
+               Padding="30,0,30,0"/>
+
+            <Entry x:Name="txtId" Placeholder="ID" ></Entry>
+
+            <Entry x:Name="txtTitulo"
+                    Placeholder="Título" ></Entry>
+            
+            <Entry x:Name="txtAutor" 
+                   Placeholder="Autor" ></Entry>
+
+            <Entry x:Name="txtGenero" 
+                    Placeholder="Género" ></Entry>
+
+            <Button Text="Insertar"  Clicked="cmdInsert_Clicked" ></Button>
+            <Button Text="Modificar" Clicked="cmdUpdate_Clicked"></Button>
+            <Button Text="Leer" Clicked="cmdReadOne_Clicked"></Button>
+            <Button Text="Eliminar" Clicked="cmdDelete_Clicked"></Button>
+
+            <Button x:Name="cmdIrALibros" Text="Ir a la lista de libros" Clicked="cmdIrALibros_Clicked"></Button>
+            <Button x:Name="cmdCerrarSesion" Text="Cerrar Sesión"
+                       Clicked="cmdCerrarSesion_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
